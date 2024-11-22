@@ -3,7 +3,6 @@ import 'package:latest_weather_app/cubits/get_weather_cubit/get_weather_cubit.da
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:latest_weather_app/cubits/get_weather_cubit/get_weather_states.dart';
 import 'package:latest_weather_app/views/welcome_view.dart';
-import 'views/homeview.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
@@ -46,7 +45,7 @@ class WeatherApp extends StatelessWidget {
               // Additional customization for dark theme can go here
             ),
             themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
-            home: const WelcomeScreen(),
+            home: const WelcomeView(),
           );
         },
       ),
